@@ -12,45 +12,59 @@
         <script src="index.js"></script>
 
         <!-- The header/ nav bar-->
-         <header>
+        <header>
             <div class="container">
                 <img src="images/frog header.jpg" alt="An image of two tree frogs sitting on a branch">
 
                 <!-- Will be created in css-->
                 <div class="rectangle">
                     
-                <div class="nav-bar">
-                    <img src="images/logo.png" alt="A circluar logo with an outline of a frog and the words of the company 'Frog Center'">
+                    <!-- Container for nav bar img-->
+                    <div class="nav-bar">
+                        <img src="images/logo.png" alt="A circluar logo with an outline of a frog and the words of the company 'Frog Center'">
 
-                    <!-- Add the content for the nav bar-->
-                    <div class="pages">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="contact.html">contact Us</a></li>
+                        <!-- Add the pages for the nav bar-->
+                        <div class="pages">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">contact Us</a></li>
 
-                            <!-- Dropdown section for the frog knowledge and lifecycle page-->
-                            <div class="dropdown">
-                                <button class="drop-button">Frogs
-                                    <i class="fa fa-caret-down"></i>
-                                </button>
-                                <div class="dropdown-content">
-                                    <li><a href="frog.html">Frog Knowledge</a></li>
-                                    <li><a href="life-cycle.html">Life Cycle</a></li>
+                                <!-- Dropdown section for the frog knowledge and lifecycle page-->
+                                <div class="dropdown">
+                                    <button class="drop-button">Frogs
+                                        <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <li><a href="frog.html">Frog Knowledge</a></li>
+                                        <li><a href="life-cycle.html">Life Cycle</a></li>
+                                    </div>
                                 </div>
-                            </div>
-                        </ul>
+                            </ul>
+                        </div>
                     </div>
-                </div>
                 </div>
             </div>
          </header>
-
-         <main>
-            <div>
-
+        <main>
+            <div class="intro">
+                <!-- Include frog vid made for kids-->
+                <iframe class="edu" src="https://www.youtube.com/embed/-r6tZGMep0U?autoplay=1&mute=1"></iframe>
+                <p>Frogs are truly interesting creatures. Coming in a variety of colors and sizes it is hard to not encounter these sticky fellows once at least once. As of currently, there are over 6,000 species of frogs 
+                        around the world; this number only keeps growing as we find more!<br><br>Explore the amazing world of frogs and find out what makes them so unique as creatures who hop around the world.</p>
             </div>
-         </main>
+        </main>
     </body>
+
+    <!-- Add basic information for the footer. Github and a quiz. This should remain the same through all pages-->
+    <footer>
+        <p>Feel Free to explore my other <br>
+            projects from my github: Vigonzz
+            <br>
+            <br>
+            Like frogs too? Check out this trivia:<br>
+            <a class="quiz" href="https://kids.nationalgeographic.com/games/quizzes/article/freaky-frogs-quiz-whiz">Frog Quiz</a>
+        </p>
+    </footer>
     
 </html>
