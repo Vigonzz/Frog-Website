@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FEFAF2;
+}
+
+.rectangle {
+    width: 100%;
+    height: 150px;
+    background: rgba(217, 217, 217, 0.45);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-bar img {
+    width: 138px;
+    height: 166px;
+    flex-shrink: 0;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    gap: 2rem;
+}
+
+.pages {
+    display: flex;
+    align-items: center;
+    font-family: "Inknut Antiqua", sans-serif;
+    text-align: left;
+    cursor: pointer;
+    flex: 1;
+}
+
+.pages a {
+    font-size: 16px;
+    color:  black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    margin: 5px;
+    gap: 2rem;
+    transition: all 0.3s ease;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .drop-button {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pages a:hover, .dropdown:hover .drop-button {
+    color: #FBE68E;
+    transform: scale(1.05);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(217, 217, 217, .85);
+    min-width: 160px;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+.toggle {
+    margin-left: auto;
+    color: #FEFAF2;
+    font-size: 1.5rem;
+    display: none;
+    z-index: 1001;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    padding: 1rem;
+    display: none;
+    background-color: rgba(217, 217, 217, .90);
+    width: 300px;
+    margin-left: auto;
+    z-index: 999;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+    font-family: "Inknut Antiqua", sans-serif;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transform: scale(1.05);
+}
+
+.dropdown-menu a:hover {
+    color: #FBE68E;
+    cursor: pointer;
+}
+
+.dropdown-menu.open {
+    display: block;
+    cursor: pointer;
+}
+
+footer {
+    display:block;
+    width: 100% !important;
+    align-items: center;
+    background: #FBE68E;
+    padding-top: 38px;
+    padding-bottom: 19px;
+    font-family: "Inria Serif", sans-serif;
+}
+
+.close {
+    width: 371px;
+    height: 93px;
+    flex-shrink: 0;
+    color: black;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 46px;
+}
+
+.quiz:link {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    color: black;
+}
+
+.quiz:visited {
+    color: #97B9A3;
+}
+
+.quiz:hover {
+    color: #97B9A3;
+}
+
+@media(max-width: 760px) {
+    .pages {
+        display: none;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .close {
+        margin-left: 20px;
+        margin-right:20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .rectangle {
+        height: 120px;
+    }
+
+    .nav-bar img {
+        width: 100px;
+        height: 120px;
+    }
+
+    .nav-bar {
+        padding: 0 15px;
+    }
+}
