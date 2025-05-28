@@ -5,17 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Learn About Frogs</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/landing.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     </head>
     
     <body>
-        <script src="index.js"></script>
-
         <!-- The header/ nav bar-->
         <header>
             <div class="container">
-                <img src="images/frog header.jpg" alt="An image of two tree frogs sitting on a branch">
-
                 <!-- Will be created in css-->
                 <div class="rectangle">
                     
@@ -25,46 +28,68 @@
 
                         <!-- Add the pages for the nav bar-->
                         <div class="pages">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="contact.html">contact Us</a></li>
-
-                                <!-- Dropdown section for the frog knowledge and lifecycle page-->
-                                <div class="dropdown">
-                                    <button class="drop-button">Frogs
-                                        <i class="fa fa-caret-down"></i>
-                                    </button>
-                                    <div class="dropdown-content">
-                                        <li><a href="frog.html">Frog Knowledge</a></li>
-                                        <li><a href="life-cycle.html">Life Cycle</a></li>
-                                    </div>
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="contact.html">Contact</a>
+                            <!-- Dropdown section for the frog knowledge and lifecycle page-->
+                            <div class="dropdown">
+                                <button class="drop-button">Frogs</button>
+                                <div class="dropdown-content">
+                                    <a href="frog.html">Frog Knowledge</a>
+                                    <a href="life-cycle.html">Life Cycle</a>
                                 </div>
-                            </ul>
+                            </div>
+                        </div>
+                        <div class="toggle" onclick="toggleMobileMenu()">
+                            <i class="fa-solid fa-bars"></i>
                         </div>
                     </div>
+
+                    <div class="dropdown-menu" id="mobileMenu">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="frog.html">Frog Knowledge</a>
+                        <a href="life-cycle.html">Life Cycle</a>
+                    </div>
                 </div>
+                <h1>The Life of Frogs</h1>
             </div>
-         </header>
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <main>
             <div class="intro">
                 <!-- Include frog vid made for kids-->
-                <iframe class="edu" src="https://www.youtube.com/embed/-r6tZGMep0U?autoplay=1&mute=1"></iframe>
+                <iframe class="edu" src="https://www.youtube.com/embed/-r6tZGMep0U?autoplay=1&mute=1" allowfullscreen></iframe>
                 <p>Frogs are truly interesting creatures. Coming in a variety of colors and sizes it is hard to not encounter these sticky fellows once at least once. As of currently, there are over 6,000 species of frogs 
                         around the world; this number only keeps growing as we find more!<br><br>Explore the amazing world of frogs and find out what makes them so unique as creatures who hop around the world.</p>
             </div>
         </main>
-    </body>
 
-    <!-- Add basic information for the footer. Github and a quiz. This should remain the same through all pages-->
-    <footer>
-        <p>Feel Free to explore my other <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- Add basic information for the footer. Github and a quiz. This should remain the same through all pages-->
+        <footer>
+            <p class="close">Feel Free to explore my other <br>
             projects from my github: Vigonzz
-            <br>
-            <br>
-            Like frogs too? Check out this trivia:<br>
-            <a class="quiz" href="https://kids.nationalgeographic.com/games/quizzes/article/freaky-frogs-quiz-whiz">Frog Quiz</a>
-        </p>
-    </footer>
-    
+                <br>
+                <br>
+                Like frogs too? Check out this trivia:<br>
+                <a class="quiz" href="https://kids.nationalgeographic.com/games/quizzes/article/freaky-frogs-quiz-whiz">Frog Quiz</a>
+            </p>
+        </footer>
+
+        <!-- Add Js-->
+        <script src="js/landing.js"></script>
+
+    </body>   
 </html>
