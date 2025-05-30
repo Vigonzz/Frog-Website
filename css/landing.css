@@ -14,12 +14,19 @@
     text-align: center;
 }
 
+.information {
+    margin-left: 5%;
+    max-width: 700px;
+    min-width: 0;
+    padding-top: 1%;
+}
+
 h2 {
-    text-align: right;
+    text-align: center;
     align-items: center;
-    padding-left: 50%;
     font-family: "Inknut Antiqua", sans-serif;
-    font-size: 40px;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 0.05rem;
 }
 .intro {
     display: flex;
@@ -27,16 +34,16 @@ h2 {
     font-family: "Inria Serif", sans-serif;
 }
 
-.intro p {
+.information p {
     display: inline-flex;
     text-align: center;
     padding: 70px;
-    width: 700px;
     display: flex;
-    
+    padding-bottom: 60px;
+    font-size: clamp(1rem, 2vw, 1.1rem);
 }
 .edu {
-    width: 1000px;
+    width: 900px;
     height: 350px;
     margin-left: 50px;
 }
@@ -46,18 +53,24 @@ h2 {
         flex-direction: column;
         text-align: center;
     }
-
-    .edu {
-        width: 100%;
-        max-width: 380px;
-        height: auto;
-    }
-
-    p, h2 {
+    
+    .information {
         flex-direction: column;
         text-align: center;
-        max-width: fit-content;
     }
+
+    .edu {
+        max-width: 330px;
+        min-width: 0;
+        height: auto;
+        align-items: center;
+    }
+
+    h2, p {
+        padding-top: 10%;
+        position: relative;
+    }
+
 }
 
 @media (max-width: 480px) {
