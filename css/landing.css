@@ -35,7 +35,6 @@ h2 {
 }
 
 .information p {
-    display: inline-flex;
     text-align: center;
     padding: 70px;
     display: flex;
