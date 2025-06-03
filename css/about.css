@@ -1,1 +1,41 @@
 /* This will be for the about page specifc styling */
+.container {
+    background: url(../images/frog-header.jpg) lightgray 50% / cover;
+    width: 100%;
+    height: 150px;
+    background-position: center;
+}
+
+h1 {
+    width: 353px;
+    height: 113px;
+    flex-shrink: 0;
+    text-align: center;
+    font-family: "Inknut Antiqua";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 54%;
+}
+
+img {
+    width: 500px;
+    height: 510px;
+    display: flex;
+    margin-left: 300px;
+    margin-bottom: 200px;
+}
+
+p {
+    display: flex;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 20%;
+    font-size: 20px;
+}
+
+.talk {
+    padding-top: 5%;
+    display: flex;
+}

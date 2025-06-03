@@ -133,7 +133,9 @@ body {
 
 footer {
     display:block;
-    width: 100% !important;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     align-items: center;
     background: #FBE68E;
     padding-top: 38px;
