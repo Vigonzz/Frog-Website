@@ -3,11 +3,10 @@
     background: url(../images/frog-header.jpg) lightgray 50% / cover;
     width: 100%;
     height: 150px;
-    background-position: center;
 }
 
 h1 {
-    width: 353px;
+    width: 400px;
     height: 113px;
     flex-shrink: 0;
     text-align: center;
@@ -16,15 +15,15 @@ h1 {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-left: 54%;
+    margin-left: 50%;
 }
 
-img {
-    width: 500px;
-    height: 510px;
+.selfie img {
+    max-width: 460px;
+    height: 520px;
+    margin-left: 160px;
+    margin-bottom: 100px;
     display: flex;
-    margin-left: 300px;
-    margin-bottom: 200px;
 }
 
 p {
@@ -38,4 +37,33 @@ p {
 .talk {
     padding-top: 5%;
     display: flex;
+}
+
+@media (max-width: 760px) {
+    .talk {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    
+    .selfie img {
+        flex-direction: column;
+        max-width: 400px;
+        align-items: center;
+        min-width: 0;
+    }
+
+    h1 {
+    font-size: min(10vw, 80px);
+    margin-top: 1rem;
+    flex-direction: column;
+    margin-left: auto;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        height: 120px;
+    }
 }
