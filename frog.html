@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Frog Knowledge</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/frog.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <!-- The header/ nav bar-->
+        <header>
+            <div class="container">
+                <!-- Will be created in css-->
+                <div class="rectangle">
+                    
+                    <!-- Container for nav bar img-->
+                    <div class="nav-bar">
+                        <img src="images/logo.png" alt="A circluar logo with an outline of a frog and the words of the company 'Frog Center'">
+
+                        <!-- Add the pages for the nav bar-->
+                        <div class="pages">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="contact.html">Contact</a>
+                            <!-- Dropdown section for the frog knowledge and lifecycle page-->
+                            <div class="dropdown">
+                                <button class="drop-button">Frogs</button>
+                                <div class="dropdown-content">
+                                    <a href="frog.html">Frog Knowledge</a>
+                                    <a href="life-cycle.html">Life Cycle</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="toggle" onclick="toggleMobileMenu()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-menu" id="mobileMenu">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="frog.html">Frog Knowledge</a>
+                        <a href="life-cycle.html">Life Cycle</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <br>
+        <br>
+        <br>
+
+        <!-- Break up each section so you can position better each element -->
+        <main>
+            <!-- Begin the start of the page. Start with the header -->
+            <div class="start">
+                <h1>Frog Knowledge</h1>
+            </div>
+            <br>
+            <br>
+
+            <!-- First section, the image should ideally be on the right with text on the left -->
+            <div class="start-intro">
+                <p><img src="images/Frogpg.jpg">What is a frog? Well simply put, a frog is a small semi-aquatic amphibian; 
+                    more specifically cold-blooded vertebrates. Frogs are also extremely diverse as they live in almost every continent on Earth. 
+                    Being an amphibian, frogs can live on land and in water thus expanding there possibilities of locations to call home. 
+                </p>
+
+                <br>
+                <br>
+                <!-- Still within the same section. This should be underneath the previous paraghraph. Centered -->
+                <div class="identify">
+                    <p>Kingdom: Animalia <br>
+                        Class: Amphibia <br>
+                        Domain: Eukaryota <br>
+                        Phylum: Chordata</p>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <!-- Second section. Allows for info of amphibians -->
+            <div class="amphibian">
+                <!-- This should allow the two images to be it's own thing. Images need to be ccircles on the left -->
+                <div class="eye-view">
+                    <img src="images/frog-circle.jpg">
+                    <img src="images/happy-frog-circle.jpg">
+                </div>
+
+                <div class="frog-para">
+                    <h2>What is an amphibian?</h2>
+                    <p>An amphibian is a creature that can live in both water and land. However, when considering their 
+                        reproductive needs. An amphibian can only produce their eggs in or at least near the water. Additionally, 
+                        a change in their structure (metamorphosis) proceeds at a point in their life, typically changing them from an 
+                        aquatic larvae to an adult with legs and functional lungs</p>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <!-- Frog vs. Toad section. The content should be like a sandwich. The image of frog, para, toad -->
+            <div class="frog-v-toad">
+                <img src="images/frog.jpg">
+
+                <!-- Create seperate div for positioning of header and para -->
+                <div class="vs-para">
+                    <h2>Frog Vs. Toad</h2>
+                    <p>Just because they look the same does not mean they actually are. 
+                        Despite being both amphibians, they are not in the same family. 
+                        Their homes tend to be different as well. As noted, frogs vary in their habitat 
+                        where as a toad has a more terrestrial desire. Additionally, there are noticeable physical 
+                        differences between the two. A frogs have smooth and hydrated skin, adn long legs. The toad on the 
+                        other hand has dry and even warty skin, which is accompined with shorter limbs. 
+                    </p>
+                </div>
+                <img src="images/toad.jpg">
+            </div>
+
+            <br>
+            <br>
+            <br>
+
+            <!-- Fun fact section! -->
+
+            <!-- Fact #1. This is to be broken into two devs. For image and for header/para -->
+            <div class="fact-one">
+                <img src="images/fact-one.jpg">
+                <!-- Header and para -->
+                <div class="one-para">
+                    <h3>Fun Fact #1</h3>
+                    <br>
+                    <p>There are approximately 180 species of poisonous frog that exist throughout the world today.</p>
+                </div>
+            </div>
+
+             <!-- Fact two -->
+            <div class="fact-two">
+                <img src="images/fact-two.jpg">
+                <!-- Seperate div for header and ele -->
+                 <div class="two-para">
+                    <h3>Fun Fact #2</h3>
+                    <br>
+                    <p>Frogs hold many myths throughout many cultures and are often associated with fertility. This common myth can be 
+                        attributed to how many eggs they produce and other social factors within the referring culture.</p>
+                 </div>
+            </div>
+
+              <!-- Fun fact #3-->
+            <div class="fact-three">
+                <img src="images/fact-three.jpg">
+                <div class="three-para">
+                        <h3>Fun Fact #3</h3>
+                    <p>Due to the positioning of frogs eyes, they are able to see about 180 degrees.</p>
+                </div>
+            </div>
+        </main>
+        
+        <br>
+        <br>
+        <br>
+
+        <!-- Add basic information for the footer. Github and a quiz. This should remain the same through all pages-->
+        <footer>
+            <p class="close">Feel Free to explore my other <br>
+            projects from my github: Vigonzz
+                <br>
+                <br>
+                Like frogs too? Check out this trivia:<br>
+                <a class="quiz" href="https://kids.nationalgeographic.com/games/quizzes/article/freaky-frogs-quiz-whiz">Frog Quiz</a>
+            </p>
+        </footer>
+
+        <!-- Add Js-->
+        <script src="js/landing.js"></script>
+    </body>
+</html>
