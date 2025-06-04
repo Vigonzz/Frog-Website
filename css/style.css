@@ -105,6 +105,7 @@ body {
     width: 300px;
     margin-left: auto;
     z-index: 999;
+    border-radius: 5%;
 }
 
 .dropdown-menu a {
