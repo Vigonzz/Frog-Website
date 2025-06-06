@@ -1,0 +1,36 @@
+.container {
+    background: url(../images/frog-header.jpg) lightgray 50% / cover;
+    width: 100%;
+    height: 150px;
+}
+
+.start h1 {
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Inknut Antiqua";
+    font-size: 64px;
+    font-style: normal;
+}
+
+img.align {
+    float: right;
+    margin-right: 95px;
+    margin-left: 50px;
+    max-height: 419px;
+    max-width: 625px;
+    margin-bottom: 45px;
+    align-items: center;
+}
+
+.start-intro p {
+    margin-left: 20%;
+}
+
+.identify {
+    align-items: center;
+    text-align: center;
+}
+
+
