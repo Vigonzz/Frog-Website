@@ -1,7 +1,16 @@
+main {
+    padding-top: 150px;
+    min-height: 100vh;
+}
+
 .container {
     background: url(../images/frog-header.jpg) lightgray 50% / cover;
     width: 100%;
     height: 150px;
+}
+
+.start {
+    padding-top: 10px;
 }
 
 .start h1 {
@@ -12,7 +21,7 @@
     font-family: "Inknut Antiqua";
     font-size: 64px;
     font-style: normal;
-    padding-bottom: 100px
+    padding-bottom: 50px;
 }
 
 img.align {
@@ -39,10 +48,10 @@ img.align {
 }
 
 .amphibian-wrapper {
-    background-color: #97B9A3;
+    background-color: #9DBFA6;
     width: 100%;
     height: 100%;
-    padding: 320px 0;
+    padding: 335px 0;
 }
 
 .amphibian {
@@ -51,18 +60,11 @@ img.align {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0px 20px;
-    gap: 400px;
+    gap: 40px;
 }
 
 .content-right {
     flex: 1;
-}
-
-.eye-view {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    flex-shrink: 0;
 }
 
 .eye-view img {
@@ -70,6 +72,14 @@ img.align {
     object-fit: cover;
     max-width: 200px;
     max-height: 200px;
+}
+
+.fish-eye img {
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: 200px;
+    max-height: 200px;
+    margin: -50px;
 }
 
 .amphibian h2 {

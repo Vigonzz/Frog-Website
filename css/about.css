@@ -1,4 +1,10 @@
 /* This will be for the about page specifc styling */
+
+main {
+    padding-top: 170px;
+    min-height: 100vh;
+}
+
 .container {
     background: url(../images/frog-header.jpg) lightgray 50% / cover;
     width: 100%;
