@@ -102,3 +102,32 @@ img.align {
     line-height: 1.6;
     margin: 0;
 }
+
+.vs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 40px;
+    gap: 3em;
+}
+
+.vs img {
+    max-width: 500px;
+}
+
+.vs-para p {
+    text-align: center;
+    font-size: 22px;
+    padding: 0px 20px 20px 0px;
+}
+
+.frog-v-toad h2 {
+    font-size: 42px;
+    text-align: center;
+    margin-top: -15px;
+    padding-bottom: 30px;
+}
+
+.frog-v-toad {
+    padding: 100px;
+}
