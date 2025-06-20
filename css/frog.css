@@ -131,3 +131,70 @@ img.align {
 .frog-v-toad {
     padding: 100px;
 }
+
+.fun-fact {
+    background-color: #9DBFA6;
+}
+
+.fun-fact h2 {
+    font-size: 42px;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.fact-one {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-bottom: 100px;
+}
+
+.fact-one img {
+    max-width: 600px;
+    max-height: 400px;
+    border-radius: 2%;
+}
+
+.one-para {
+    text-align: center;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.one-para p {
+    font-size: 22px;
+}
+
+.one-para h3 {
+    font-size: 30px;
+}
+
+.fact-two {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 100px;
+    padding-left: 140px;
+    padding-right: 100px;
+}
+
+.fact-two img {
+    max-width: 600px;
+    max-height: 400px;
+    border-radius: 2%;
+}
+
+.two-para {
+    text-align: center;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.two-para {
+    font-size: 22px;
+}
+
+.two-para h3 {
+    font-size: 30px;
+}
