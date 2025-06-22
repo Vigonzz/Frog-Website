@@ -134,6 +134,8 @@ img.align {
 
 .fun-fact {
     background-color: #9DBFA6;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 .fun-fact h2 {
@@ -147,7 +149,7 @@ img.align {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 
 .fact-one img {
@@ -167,34 +169,5 @@ img.align {
 }
 
 .one-para h3 {
-    font-size: 30px;
-}
-
-.fact-two {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    margin-bottom: 100px;
-    padding-left: 140px;
-    padding-right: 100px;
-}
-
-.fact-two img {
-    max-width: 600px;
-    max-height: 400px;
-    border-radius: 2%;
-}
-
-.two-para {
-    text-align: center;
-    padding-left: auto;
-    padding-right: auto;
-}
-
-.two-para {
-    font-size: 22px;
-}
-
-.two-para h3 {
     font-size: 30px;
 }
