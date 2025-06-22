@@ -1,0 +1,22 @@
+main {
+    padding-top: 150px;
+    min-height: 100vh;
+}
+
+.container {
+    background: url(../images/frog-header.jpg) lightgray 50% / cover;
+    width: 100%;
+    height: 150px;
+}
+
+.life h1 {
+    text-align: center;
+    font-size: 64px;
+    font-weight: bold;
+    font-family: "Inknut Antiqua";
+}
+
+.content-whole {
+    display: flex;
+    flex-direction: row;
+}
