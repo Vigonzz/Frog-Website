@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Frog Knowledge</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/life.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <!-- The header/ nav bar-->
+        <header>
+            <div class="container">
+                <!-- Will be created in css-->
+                <div class="rectangle">
+                    
+                    <!-- Container for nav bar img-->
+                    <div class="nav-bar">
+                        <img src="images/logo.png" alt="A circluar logo with an outline of a frog and the words of the company 'Frog Center'">
+
+                        <!-- Add the pages for the nav bar-->
+                        <div class="pages">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="contact.html">Contact</a>
+                            <!-- Dropdown section for the frog knowledge and lifecycle page-->
+                            <div class="dropdown">
+                                <button class="drop-button">Frogs</button>
+                                <div class="dropdown-content">
+                                    <a href="frog.html">Frog Knowledge</a>
+                                    <a href="life-cycle.html">Life Cycle</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="toggle" onclick="toggleMobileMenu()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-menu" id="mobileMenu">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="frog.html">Frog Knowledge</a>
+                        <a href="life-cycle.html">Life Cycle</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <br>
+        <br>
+        <br>
+        <main>
+            <div class="life">
+                <!-- Frog life cycle introduction page -->
+                <h1>Frog Life Cycle</h1>
+
+                <!-- I fell in love with flexbox; therefore, I am going to be using a strucutre that I belive may help implement it better -->
+                <div class="content-whole">
+                    <div class="para">
+                        <p>The life cycle of a frog is a quite interesting. As mentioned previously amphibians undergo a metamorphosis, and 
+                        frogs showcase this process quite nicely. There are four stages that a frog will undergo to become, well, a frog.
+                        Depicted in the photo to the left, a frog will being as an egg, then tadpole, froglet, and it’s final form an Adult Frog. This process 
+                        typically occurs in a short time span
+                    </p>
+                    </div>
+                    <img src="./images/frog-life.jpg" alt="An image of a frog in it's various life stages. Depicts eggs, tadpole, froglet, and adult frog">
+                </div>
+
+                <!-- I don't want the header to be apart of the <p> so I am ot including it in the same div -->
+                <!-- This will be for stage 1 of the frog life cycle -->
+                <div class="stage">
+                    <h2>Stage 1: Embryo</h2>
+                    <div class="content-whole">
+                        <div class="para">
+                            <p>When a frog egg is laid it will be in a body of water. It is important to know that there will never be a singular 
+                                egg as some species of frogs can lay up to 4,000 eggs per birth. The egg will be soft due to its high content of 
+                                moisture and also acts as a defense mechanism to defend against any curious predators. In turn the texture of the 
+                                egg also acts as nutrients for the embryo, as it allows it to gain nutrients from it. 
+                            </p>
+                        </div>
+                        <img src="./images/egg.jpg" alt="An image of forg eggs">
+                    </div>
+                </div>
+
+                <!-- This will be for stage 2: Tadpoles -->
+                <div class="stage">
+                    <h2>Stage 2: Tadpoles</h2>
+                    <div class="content-whole">
+                        <div class="para">
+                            <p>At the beginning of a tadpoles life they will stay closely to aquatic plants and grass; they can not fully migrate to 
+                                land since they still require water and can not survive on land at this exact point. The main food source of a tadpole 
+                                will contain small vegetation, such as the plants they are residing next to.</p>
+
+                            <p>Tadpoles are actually quite active and are always moving. The gills that have already developed on them allow them to 
+                                breath underwater and give them the ability to properly swim.</p>
+
+                            <p>After about 14 weeks more physical changes appear where the frog can then develop their hind legs and a tail. During this 
+                                process on the outside, internally their organs such as lungs will being to form. It will take about 14 weeks for the frog 
+                                to develop into a proper froglet
+                            </p>
+                        </div>
+                        <img src="./images/tadpoles.jpg" alt="An image of tadpoles in shallow water.">
+                    </div>
+                </div>
+
+                <!-- Froglets section. Stage #3 -->
+                <div class="stage">
+                    <h2>Stage #3: Froglets</h2>
+                    <div class="content-whole">
+                        <div class="para">
+                            <p>Being a froglet means that there are now fully formed and functional limbs and even a dissipating tail; this is because 
+                                the nutrients from the tail in the previous stage are being used. Now instead of being confined to the water, the froglet 
+                                is able to explore land! This means that their diet also begins to change as they are no longer feeding off of small vegetation. 
+                                A sticky tongue forms allowing for bugs and various insects to become an optimal meal choice for these slimy friends.  
+                            </p>
+                        </div>
+                        <img src="./images/Froglet.jpg" alt="An image of froglet. Which look small and slimey. It is standing on a leaf.">
+                    </div>
+                </div>
+
+                <!-- Stage #4 of the life cycle, Adult Frog -->
+                <div class="stage">
+                    <h2>Stage #4: Adult Frog</h2>
+                    <div class="content-whole">
+                        <div class="para">
+                            <p>The transition from a froglet to an adult frog is not a short one and instead takes about four months for it to be fully completed. 
+                                Already diverted from the necessity of need the water as their primary home, frogs need to still occasionally dunk themselves in, 
+                                as an assurance that they wont dry out.  Additionally, the lifespan of a frog after this stage can widely vary due to their 
+                                environment, such as anywhere from one to twelve years.  
+                            </p>
+                        </div>
+                        <img src="./images/adult.jpg" alt="An image of fully grown yellow frog sitting on dirt in the night time.">
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Add basic information for the footer. Github and a quiz. This should remain the same through all pages-->
+        <footer>
+            <p class="close">Feel Free to explore my other <br>
+            projects from my github: Vigonzz
+                <br>
+                <br>
+                Like frogs too? Check out this trivia:<br>
+                <a class="quiz" href="https://kids.nationalgeographic.com/games/quizzes/article/freaky-frogs-quiz-whiz">Frog Quiz</a>
+            </p>
+        </footer>
+
+        <!-- Add Js-->
+        <script src="js/landing.js"></script>
+    </body>
+</html>
