@@ -112,7 +112,7 @@ img.align {
 }
 
 .vs img {
-    max-width: 500px;
+    max-width: 350px;
 }
 
 .vs-para p {
@@ -170,4 +170,111 @@ img.align {
 
 .one-para h3 {
     font-size: 30px;
+}
+
+@media (max-width: 720px) {
+    .amphibian {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content-right {
+        margin-top: 0;
+    }
+
+    .eye-view img {
+        margin-left: 0;
+        margin-top: 0;
+        max-width: 300px;
+        max-height: 400px;
+    }
+
+    .fish-eye img {
+        margin-right: 0;
+        margin-top: 0;
+        margin-left: 0;
+        max-width: 300px;
+        max-height: 400px;
+    }
+
+    .fact-one {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .fact-one img {
+        margin-bottom: 20px;
+    }
+
+    .vs {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .vs img {
+        margin-bottom: 20px;
+        max-width: 200px;
+        max-height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .start-intro p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .start h1 {
+        font-size: 36px;
+        padding-bottom: 20px;
+    }
+
+    img.align {
+        float: none;
+        display: block;
+        margin: 0 auto;
+        max-width: 300px;
+        max-height: 200px;
+    }
+
+    .amphibian-wrapper {
+        padding: 150px 0;
+    }
+
+    .amphibian h2 {
+        font-size: 1.8rem;
+    }
+
+    .frog-v-toad {
+        padding: 50px 20px;
+    }
+
+    .frog-v-toad h2 {
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+
+    .fun-fact h2 {
+        font-size: 28px;
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    .one-para p {
+        font-size: 18px;
+    }
+
+    .one-para h3 {
+        font-size: 24px;
+    }
+
+    .vs {
+        flex-direction: column;
+        align-items: center;
+        text-align: center
+    }
+    
 }
