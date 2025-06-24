@@ -14,9 +14,95 @@ main {
     font-size: 64px;
     font-weight: bold;
     font-family: "Inknut Antiqua";
+    margin-bottom: 50px;
 }
 
 .content-whole {
     display: flex;
     flex-direction: row;
+    gap: 150px;
+}
+
+.stage h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.para {
+    padding-left: 150px;
+    max-width: 700px;
+    font-size: 1.5rem;
+}
+
+.content-whole img {
+    max-width: 500px;
+    height: auto;
+}
+
+.stage {
+    padding-bottom: 60px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+}
+
+.header-para {
+    padding-left: 150px;
+    max-width: 700px;
+    font-size: 1.5rem;
+}
+
+.header img {
+    max-width: 600px;
+    height: auto;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+    .header, .content-whole {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .para, .header-para {
+        padding-left: 0;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .header img, .content-whole img {
+        max-width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+     .header img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    .content-whole img {
+        max-width: 80%;
+    }
+
+    .header, .content-whole {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header-para, .para {
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+        font-size: 1rem;
+    }
 }
