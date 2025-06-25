@@ -1,0 +1,94 @@
+<!-- This is supposed to be a form that collects user input. The importance 
+is to make the contact from also safe. Thus is should be accounting how to be 
+impenetrable to sql injections-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Frog Knowledge</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- The header/ nav bar-->
+        <header>
+            <div class="container">
+                <!-- Will be created in css-->
+                <div class="rectangle">
+                    
+                    <!-- Container for nav bar img-->
+                    <div class="nav-bar">
+                        <img src="images/logo.png" alt="A circluar logo with an outline of a frog and the words of the company 'Frog Center'">
+
+                        <!-- Add the pages for the nav bar-->
+                        <div class="pages">
+                            <a href="index.html">Home</a>
+                            <a href="about.html">About</a>
+                            <a href="contact.html">Contact</a>
+                            <!-- Dropdown section for the frog knowledge and lifecycle page-->
+                            <div class="dropdown">
+                                <button class="drop-button">Frogs</button>
+                                <div class="dropdown-content">
+                                    <a href="frog.html">Frog Knowledge</a>
+                                    <a href="life-cycle.html">Life Cycle</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="toggle" onclick="toggleMobileMenu()">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-menu" id="mobileMenu">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="frog.html">Frog Knowledge</a>
+                        <a href="life-cycle.html">Life Cycle</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- The background is to contain a background image of frogs. I might either use the picture that is utlized throughout the nav
+        or the hero banner in the index -->
+        <main>
+            <div class="contact">
+                <form>
+                    <label for="fn">First Name:</label><br>
+                    <input type="text" id="fn" name="fn" required><br>
+                    <label for="ln">Last Name:</label><br>
+                    <input type="text" id="ln" name="ln" required><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </main>
+
+         <!-- Add basic information for the footer. Github and a quiz. This should remain the same through all pages-->
+        <footer>
+            <p class="close">Feel Free to explore my other <br>
+            projects from my github: Vigonzz
+                <br>
+                <br>
+                Like frogs too? Check out this trivia:<br>
+                <a class="quiz" href="https://kids.nationalgeographic.com/games/quizzes/article/freaky-frogs-quiz-whiz">Frog Quiz</a>
+            </p>
+        </footer>
+
+        <!-- Add Js-->
+        <script src="js/landing.js"></script>
+    </body>
