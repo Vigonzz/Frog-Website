@@ -11,65 +11,52 @@ main {
     height: 150px;
 }
 
-h1 {
-    width: 400px;
-    height: 113px;
-    flex-shrink: 0;
-    text-align: center;
-    font-family: "Inknut Antiqua";
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin-left: 50%;
+.about {
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    margin-top: -40px;
 }
 
-.selfie img {
-    max-width: 460px;
-    height: 520px;
-    margin-left: 160px;
-    margin-bottom: 100px;
-    display: flex;
+.section img {
+    max-width: 500px;
+    height: auto;
 }
 
-p {
+.section {
+    margin: 20px 0;
     display: flex;
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 20%;
-    font-size: 20px;
+    gap: 100px;
 }
 
 .talk {
-    padding-top: 5%;
-    display: flex;
+    max-width: 600px;
+    font-size: 1.5rem;
 }
 
-@media (max-width: 760px) {
-    .talk {
+h1 {
+    text-align: center;
+    font-size: 64px;
+    font-weight: bold;
+    font-family: "Inknut Antiqua";
+}
+
+@media (max-width: 768px) {
+    .about {
         flex-direction: column;
-        text-align: center;
-        margin-bottom: 100px;
-    }
-    
-    .selfie img {
-        flex-direction: column;
-        max-width: 400px;
         align-items: center;
-        min-width: 0;
     }
 
-    h1 {
-    font-size: min(10vw, 80px);
-    margin-top: 1rem;
-    flex-direction: column;
-    margin-left: auto;
-
+    .section {
+        flex-direction: column;
+        align-items: center;
     }
-}
 
-@media (max-width: 480px) {
-    .container {
-        height: 120px;
+    .section img {
+        max-width: 100%;
+    }
+
+    .talk {
+        text-align: center;
     }
 }
