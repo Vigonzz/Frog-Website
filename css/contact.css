@@ -16,19 +16,48 @@ h1 {
     font-size: 64px;
     font-weight: bold;
     font-family: "Inknut Antiqua";
+    color: #FEFAF2;
 }
 
 .contact {
     max-height: 780px;
-    width: 724px;
+    width: 720px;
     background-color: rgba(203, 217, 208, 0.8);
-    padding: 150px;
+    padding: 80px;
     margin: auto;
     border-radius: 20px;
+    margin-bottom: 150px;
 }
 
 .contact-form {
     text-align: center;
     padding: 0;
-    margin: 0;
+}
+
+label {
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+input {
+    height: 35px;
+    width: 40%;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 60%;
+    height: 150px;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        width: 90%;
+        padding: 40px;
+        border-radius: 10px;
+    }
+
+    .contact-form {
+        font-size: 1rem;
+    }
 }
